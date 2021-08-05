@@ -16,7 +16,7 @@ public class Alumnos {
     private String apellido;
     private String email;
     
-    Alumnos(int id, String nombre,String apellido,String email){
+    public Alumnos(int id, String nombre,String apellido,String email){
         this.id=id;
         this.nombre=nombre;
         this.apellido=apellido;

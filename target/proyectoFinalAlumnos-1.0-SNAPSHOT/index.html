@@ -1,36 +1,276 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Login</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="description" content="Agencia de Marketing y posicionamiento FullStack">
+    <meta name="keywords" content="Marketing Posicionamiento, Codo a Codo">   
+    <meta name="author" content="Codo a Codo 4.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Escuela</title>
 
-    </head>
-    <body>
+    <!-- Link´s CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">  
+    <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/estilos-style.css">           
+</head>
+<body>
+    <!-- encabezado -->
+     <!-- Pre- Loader -->   
+       <section class="preloader">
+        <div class="spinner">
+             <span class="spinner-rotate"></span>
+        </div>
+     </section>
+
+
+   <!-- menu -->
+   <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="row">
-                <h1 class="text-center">Login</h1>
-                <div class="col-6">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
-                        </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Ingresar</button>
-                      </form>
+
+             <div class="navbar-header">
+                  <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                       <span class="icon icon-bar"></span>
+                       <span class="icon icon-bar"></span>
+                       <span class="icon icon-bar"></span>
+                  </button>
+
+                  <!-- logo -->
+                  <h2>  <a href="./" class="navbar-brand"></a><b>583</b> Escuela </a></h2>
+             </div>
+
+             <!-- menu links -->
+             <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-nav-first">
+                       <li><a href="index.html" class="smoothScroll">Home</a></li>
+                       <li><a href="conoceme.html" class="smoothScroll">Conocenos</a></li>
+                       <li><a href="blog.html" class="smoothScroll">Blog</a></li>
+                       <li><a href="proyectos.html" class="smoothScroll">Proyectos</a></li>
+                       <li><a href="contacto.html" class="smoothScroll">Contáctanos</a></li>
+                  </ul>
+
+                  <ul class="nav navbar-nav navbar-right">
+                       <li><a href="#"><i class="fa fa-facebook-square" style="font-size:30px"></i></a></li>
+                       <li><a href="#"><i class="fa fa-instagram" style="font-size:30px"></i></a></li>
+                       <li class="section-btn"><a href="login.html" target="_blank" data-toggle="modal" data-target="#modal-form">Registrarse</a></li>
+                  </ul>
+             </div>
+
+        </div>
+   </section>
+    <!-- Home -->
+   <section id="home" data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="home-info">
+                    <h1> Escuela Nº 583</h1>
+                    <a href="#about" class="btn section-btn smoothScroll">¿Queres conocernos?</a>
+                        <span>Escribinos a gimenabinaghi@gmail.com <small> para ponernos en contacto </small></span>
                 </div>
-                
             </div>
         </div>
-        
-    </body>
+    </div>
+
+   </section>
+
+    <!-- actividades -->
+
+    <section id="about" data-stellar-background-ratio="0.5">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-5 col-sm-6">
+                    <div class="section-title">
+                        <h2>Nuestros alumnos</h2>
+                        <span class="line-bar">...</span>
+                    </div>
+                <p>Han participado:</p>
+                    </div>
+
+                    <div class="col-md-5 col-sm-6">
+                            <div class="about-info">
+                                <strong>Pruebas nacionales</strong>
+                                <span>85%</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar"
+                                     aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info">
+                                <strong>Pruebas internacionales</strong>
+                                <span>70%</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar"
+                                     aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info">
+                                <strong>Ingresos universitarios</strong>
+                                <span>85%</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar"
+                                     aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info">
+                                <strong>Terciarios</strong>
+                                <span>60%</span>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-primary" role="progressbar"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="col-md-4 col-sm-12">
+                                <div class="about-image">
+                                    <img src="images/about-image.png" class="img-responsive" alt="Que Hacemos" title="Nuestros estudios">
+                                </div>
+
+                                </div>
+
+
+                            </div>                         
+
+                    </div>
+            </div>
+    </section>   
+
+
+    <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-5 col-sm-12">
+                         <div class="footer-thumb footer-info"> 
+                              <h2>EESO Nº 583</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>NOSOTROS</h2>
+                              <ul class="footer-link">
+                                   <li><a href="#">Quienes Somos</a></li>
+                                   <li><a href="#">Blog</a></li>
+                                   <li><a href="#">Objetivos</a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Nuestros Servicios</h2>
+                              <ul class="footer-link">
+                                   <li><a href="#">Nuestros docentes</a></li>
+                                   <li><a href="#">Objetivos</a></li>
+                                   <li><a href="#">Actividades</a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Estamos en:</h2>
+                              <p>Calle principal <br> San Antonio de Obligado - Argentina</p>
+                         </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-bottom">
+                              <div class="col-md-6 col-sm-5">
+                                   <div class="copyright-text"> 
+                                        <p>Copyright &copy; 2021 Hecho con 💛 Gimena Binaghi</p>
+                                   </div>
+                              </div>
+                              <div class="col-md-6 col-sm-7">
+                                   <div class="phone-contact"> 
+                                        <p>Escribime <span>gimenabinaghi@gmail.com</span></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                        <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-instagram"></a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+     <!-- MODAL -->
+     <section class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+               <div class="modal-content modal-popup">
+
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                    </div>
+
+                    <div class="modal-body">
+                         <div class="container-fluid">
+                              <div class="row">
+
+                                   <div class="col-md-12 col-sm-12">
+                                        <div class="modal-title">
+                                             <h2>Gimena Binaghi</h2>
+                                        </div>
+
+                                        <!-- NAV TABS -->
+                                        <ul class="nav nav-tabs" role="tablist">
+                                             <li class="active"><a href="#sign_up" aria-controls="sign_up" role="tab" data-toggle="tab">Registrate</a></li>
+                                             <li><a href="#sign_in" aria-controls="sign_in" role="tab" data-toggle="tab">Sign In</a></li>
+                                        </ul>
+
+                                        <!-- TAB PANES -->
+                                        <div class="tab-content">
+                                             <div role="tabpanel" class="tab-pane fade in active" id="sign_up">
+                                                  <form action="#" method="post">
+                                                       <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                                       <input type="telephone" class="form-control" name="telephone" placeholder="Telephone" required>
+                                                       <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                       <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                       <input type="submit" class="form-control" name="submit" value="Submit Button">
+                                                  </form>
+                                             </div>
+
+                                             <div role="tabpanel" class="tab-pane fade in" id="sign_in">
+                                                  <form action="#" method="post">
+                                                       <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                                       <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                                       <input type="submit" class="form-control" name="submit" value="Submit Button">
+                                                       <a href="https://www.facebook.com/">Olvidaste tu clave?</a>
+                                                  </form>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+    
+
+    <!-- Scripts JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
 </html>

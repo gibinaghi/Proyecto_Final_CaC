@@ -1,25 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package config;
 import java.sql.*;
-
-/**
- *
- * @author servilinea
- */
+ 
 public class Conexion {
-    public Connection getConnection(){
+    public String driver = "com.mysql.jdbc.Driver";
+    public Connection getConnection(){  
+        Connection conexion = null;
         try{
-            Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/codoacodo",
-                    "gime","1234");
+            Class.forName(driver);
+            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_final",
+                    "root","");  
             return conexion;
-        }catch(SQLException e){
+        }catch(ClassNotFoundException | SQLException e){
             System.out.println(e.toString());
-            return null;
-        }
-    }
-    
+        }  
+        return conexion;
+        
+    }  
 }
+
